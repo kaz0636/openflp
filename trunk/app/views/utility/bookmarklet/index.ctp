@@ -14,8 +14,8 @@
 	}
 	</script>
 	<div id="bmicon">
-		<a href="javascript:location.href='<?php eh(Router::url('/',true))?>subscribe/'+location.href" title="Subscribe with Fastladder"><img src="/img/parts/bm_01.gif" width="172" height="24" alt="Subscribe with Fastladder" title="Subscribe with Fastladder"></a>
-		<a href="<?php eh(Router::url('/',true))?>reader/" title="Fastladder"><img src="/img/parts/bm_02.gif" width="90" height="24" alt="Fastladder" title="Fastladder"></a>
+		<a href="javascript:location.href='<?php eh(Router::url('/',true))?>subscribe/'+location.href" title="Subscribe with OpenFLP"><img src="/img/parts/bm_01.gif" width="172" height="24" alt="Subscribe with OpenFLP" title="Subscribe with OpenFLP"></a>
+		<a href="<?php eh(Router::url('/',true))?>reader/" title="OpenFLP"><img src="/img/parts/bm_02.gif" width="90" height="24" alt="OpenFLP" title="OpenFLP"></a>
 	</div>
 	<script type="text/javascript">
 	new function(){
@@ -46,12 +46,12 @@
 	<h3>For Firefox2 users</h3>
 	<div class="sub-content">
 	<p>
-		Firefox2 users can add Fastladder to the list of feed readers.<br />
+		Firefox2 users can add OpenFLP to the list of feed readers.<br />
 		Click feed icon and subscribe to the site as you browse.<br />
 		<img src="/img/parts/bm_ff2.gif"><br />
 		Click the following link and select 'Yes'.
 		<em>
-		<a href='javascript:navigator.registerContentHandler("application/vnd.mozilla.maybe.feed","<%= url_for(:controller => "/", :only_path => false) %>subscribe/?url=%s","Fastladder");'>Add Fastladder to your Firefox2's feed readers list.</a></em>
+		<a href='javascript:navigator.registerContentHandler("application/vnd.mozilla.maybe.feed","<?php eh(Router::url('/',true)?>subscribe/?feedlink=%s","OpenFLP");'>Add OpenFLP to your Firefox2's feed readers list.</a></em>
 	</p>
 	</div>
 </div>

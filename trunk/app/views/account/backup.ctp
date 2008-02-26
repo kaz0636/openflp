@@ -7,7 +7,7 @@
 		<strong><a href="/export/opml">Export OPML</a>(not yet supported)</strong>
 		</p>
 		<h4>Import OPML</h4>
-		<p>Import OPML subscription list to Fastladder.<br />
+		<p>Import OPML subscription list to OpenFLP.<br />
 		<strong><a href="/import/">Import OPML</a>(not yet supported)</strong>
 		</p>
 	</div>

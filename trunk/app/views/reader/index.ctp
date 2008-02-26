@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<meta http-equiv="content-script-type" content="text/javascript">
-	<title>Fastladder</title>
+	<title>OpenFLP</title>
 	<link rel="stylesheet" href="/css/common.css">
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="shortcut icon" href="/favicon.ico">
@@ -294,7 +294,7 @@ table.compact input, table.compact textarea{
 <noscript>
 	<!-- This is best practice of centering -->
 	<center style="padding-top:1em">
-	To use Fastladder, enable JavaScript by changing your browser options.
+	To use OpenFLP, enable JavaScript by changing your browser options.
 	</center>
 </noscript>
 
