@@ -1,0 +1,50 @@
+==========================================
+OpenFLP - A PHP port of Fastladder(OpenFL)
+Copyright(c)2008 OpenFLP Project
+==========================================
+
+インストール (Linux)
+=====================
+
+設定ファイルの作成
+------------------
+app/config ディレクトリに core.php を作成します。
+core.php の雛形として以下のファイルがあります。
+
+- core.php.development（開発環境用の設定ファイル）
+- core.php.production（本番環境用の設定ファイル）
+
+本番環境用の設定ファイルをコピーする例：
+
+    $ cd openflp/app/config
+    $ cp core.php.production core.php
+
+
+tmp ディレクトリのパーミッションを変更
+------------------------------------
+app/tmp ディレクトリのパーミッションを変更します。
+
+    $ cd openflp/app
+    $ chmod -R 777 tmp
+
+
+データベースの作成
+------------------
+fastladder 用のデータベースを作成します。
+MySQL でデータベースを作成する例：
+
+    CREATE DATABASE fastladder;
+    GRANT ALL ON fastladder.* TO fastladder@localhost IDENTIFIED BY 'fastladder';
+    FLUSH PRIVILEGES;
+
+データベーステーブルを作成します。
+
+    $ cd openflp
+    $ mysql -u fastladder -p fastladder < app/config/sql/fastladder.sql
+
+
+データベースの設定
+------------------
+app/config/database.php を設定します。
+
+
