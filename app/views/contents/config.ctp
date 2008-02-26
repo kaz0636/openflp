@@ -1,5 +1,5 @@
 <div id="config" style="padding:0 10px;width:95%">
-<h2 style="margin-top:0">Fastladder Settings</h2>
+<h2 style="margin-top:0">OpenFLP Settings</h2>
 <form action="/api/config/save" method="post"
  style="clear:both;width:100%;display:block"
  id="config_form"
@@ -116,7 +116,7 @@
 			<tr>
 				<th>Pin backup</th>
 				<td>
-					Let Fastladder remember your pin state (up to 100 changes).<br>
+					Let OpenFLP remember your pin state (up to 100 changes).<br>
 					<input type="radio" name="use_pinsaver" value="1">Enable<br>
 					<input type="radio" name="use_pinsaver" value="0">Disable<br>
 				</td>
@@ -184,7 +184,7 @@
 <h2>Import / Export Subscription List</h2>
 <table class="link">
 <tr><th nowrap style="padding : 0 10px"><a href="/import/">Import</a>(not yet supported)</th>
-	<td>Import OPML subscription list to Fastladder.</td>
+	<td>Import OPML subscription list to OpenFLP.</td>
 <tr><th nowrap style="padding : 0 10px"><a href="/export/opml" target="_self">Export</a>(not yet supported)</th>
 	<td>Create backup of current subscription list in OPML. Follow the link and select 'Save'.</td>
 </table>

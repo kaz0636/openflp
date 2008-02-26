@@ -5,7 +5,7 @@
 <ul>
     <li>Install <a href="../utility/bookmarklet/">browser buttons</a> to add a new subscription from your browser.</li>
     <li>Click on 'Add' icon and enter the feed URL.</li>
-    <li>You can <a href="../import/">import your OPML subscription list</a> to Fastladder.</li>
+    <li>You can <a href="../import/">import your OPML subscription list</a> to OpenFLP.</li>
 </ul>
 
 <h3>Read items</h3>

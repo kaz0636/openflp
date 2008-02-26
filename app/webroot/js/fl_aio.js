@@ -3155,11 +3155,11 @@ var LDR_VARS = {
 */
 var error_message = {};
 error_message.login = {
-	title : "You need to sign in to Fastladder",
+	title : "You need to sign in to OpenFLP",
 	body : "<p>" + "Please reload the browser and sign in again" + "</p>"
 };
 error_message.xmlhttp = {
-	title : "Your browser is not supported by Fastladder",
+	title : "Your browser is not supported by OpenFLP",
 	body : "<p>" + "Your browser is out of date.  (Please upgrade your browser.)" + "</p>"
 };
 error_message.busy = {
@@ -3217,7 +3217,7 @@ setText({
 
 setText({
 	'unread_count_tmpl': '[[feed_count]] feeds&nbsp;&nbsp;|&nbsp;&nbsp;[[count]] items',
-	'unread_count_title_tmpl': "Fastladder ([[count]])",
+	'unread_count_title_tmpl': "OpenFLP ([[count]])",
 	'mark_all_read_tmpl': " are you sure to mark [[count]] feeds as read?",
 	'manage_unsubscribe_confirm_tmpl': 'Are you sure to remove [[ count ]] feed(s) from your subscription?',
 	'manage_unsubscribe_progress_tmpl': 'Removing feeds: [[ remain ]] items to go',
