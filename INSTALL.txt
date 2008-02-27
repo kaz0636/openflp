@@ -48,3 +48,11 @@ MySQL でデータベースを作成する例：
 app/config/database.php を設定します。
 
 
+cron の設定
+--------------
+クローラースクリプトを定期実行するように設定します。
+
+    $ crontab -e
+    */30 * * * * /path/to/openflp/cake/console/cake -app /path/to/openflp/app/ crawler > /dev/null 2>&1
+
+
