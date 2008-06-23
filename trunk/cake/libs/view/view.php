@@ -775,10 +775,10 @@ class View extends Object {
 			$name = $this->action;
 		}
 
-		if (strpos($name, '/') === false && strpos($name, '..') === false) {
+		if (strpos($name, DS) === false && strpos($name, '..') === false) {
 			$name = $this->viewPath . DS . $subDir . Inflector::underscore($name);
-		} elseif (strpos($name, '/') !== false) {
-			if ($name{0} === '/') {
+		} elseif (strpos($name, DS) !== false) {
+			if ($name{0} === '/' || $name{1} === ':') {
 				if (is_file($name)) {
 					return $name;
 				}
@@ -790,7 +790,7 @@ class View extends Object {
 				$name = implode(DS, explode('/', $name));
 			}
 		} elseif (strpos($name, '..') !== false) {
-			$name = explode('/', $name);
+			$name = explode(DS, $name);
 			$i = array_search('..', $name);
 			unset($name[$i - 1]);
 			unset($name[$i]);
