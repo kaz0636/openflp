@@ -1,7 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-    <title>OpenFLP <?php eh($this->pageTitle ? $this->pageTitle : ($this->action == 'index' ? '' : $this->action))?></title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>OpenFLP <?php eh($this->pageTitle ? $this->pageTitle : ($this->action == 'index' ? '' : $this->action))?></title>
   <meta http-equiv="Content-Script-Type" content="text/javascript" />
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <link href="/css/main.css" rel="stylesheet" type="text/css" />
@@ -21,7 +22,7 @@
 </ul>
 <?php endif; ?>
 </div>
-<?php if ($Flash->notice()): ?>
+<?php if (isset($Flash) && $Flash->notice()): ?>
 <div class="notice" style="text-align:center;background-color:#ff9;padding:0.5em">
     <p style="color: green"><?php eh($Flash->notice())?></p>
 </div>
